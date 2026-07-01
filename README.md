@@ -48,7 +48,7 @@ If you want to compile this source code into a single, executable file (.exe) wi
 
 # 2. Build the executable
 
-PyInstaller --clean --noconfirm --onedir --windowed --paths="src" --hidden-import="selenium" --hidden-import="selenium.webdriver" --hidden-import="selenium.webdriver.chrome.webdriver" --hidden-import="chromedriver_autoinstaller" --add-data "src/factorio_mod_downloader/assets;factorio_mod_downloader/assets" --icon="src/factorio_mod_downloader/assets/factorio_downloader.ico" "src/factorio_mod_downloader/__main__.py" --name "factorio-downloader-v10"
+PyInstaller --clean --noconfirm --onedir --windowed --paths="src" --hidden-import="selenium" --hidden-import="selenium.webdriver" --hidden-import="selenium.webdriver.chrome.webdriver" --hidden-import="chromedriver_autoinstaller" --add-data "src/factorio_mod_downloader/assets;factorio_mod_downloader/assets" --icon="src/factorio_mod_downloader/assets/factorio_downloader.ico" "src/factorio_mod_downloader/__main__.py" --name "factorio-mod-downloader"
 ```
 Once the build process is complete, you will find your standalone application in the following directory:
 
