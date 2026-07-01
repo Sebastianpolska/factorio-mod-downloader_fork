@@ -1,5 +1,16 @@
 
-This release contains the full source code for the updated Factorio Mod Downloader. Since there is no pre-built `.exe` file included in this release, you can easily run it directly from the repository or build the executable yourself.
+This release contains the full source code for the updated Factorio Mod Downloader. There is pre-built `.exe` file included in this release, you can easily download and run yourself.
+
+# 🎮 How to Use (Quick Guide for Users)
+
+Once you run the application, follow these simple steps to download your mods:
+
+1. **Select Game Version:** Use the new drop-down menu to choose your Factorio version (e.g., select `2.0` if you are playing Space Age).
+2. **Paste Mod URL:** Go to the official Factorio mod portal, copy the link (URL) of the mod you want, and paste it into the application.
+3. **Select Download Folder:** Choose the folder where you want to save the downloaded files (usually your Factorio `mods` directory).
+4. **Click Download:** Click the download button. The application will automatically analyze the mod, look for all required dependencies, and download everything in the background.
+5. **Done!** A pop-up dialog will appear once all files are successfully downloaded and ready.
+
 
 # 🚀 What's New:
 * **Game Version Selector:** Manually choose your target Factorio version (full support for **Factorio 2.0+ Space Age**).
