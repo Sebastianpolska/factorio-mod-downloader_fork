@@ -51,6 +51,7 @@ If you want to compile this source code into a single, executable file (.exe) wi
 pyinstaller --noconfirm --onedir --windowed --add-data "src/factorio_mod_downloader/assets;factorio_mod_downloader/assets" --icon="src/factorio_mod_downloader/assets/factorio_downloader.ico" "src/factorio_mod_downloader/__main__.py" --name "factorio-mod-downloader"
 ```
 Once the build process is complete, you will find your standalone application in the following directory:
+
 📁 dist/factorio-mod-downloader/factorio-mod-downloader.exe
 
 Note: All core application mechanics and design belong to the original author, Vaibhav Vikas. This is an open-source modification.
