@@ -23,20 +23,22 @@ Make sure you have **Python** installed on your system.
 3. Install Dependencies & Run
 Install all required libraries using standard Python pip and run the application directly from the source code:
 
-bash
-
-pip install customtkinter ctkmessagebox pillow requests beautifulsoup4 selenium chromedriver-autoinstaller
-python src/factorio_mod_downloader/__main__.py
-
+```bash
+  pip install customtkinter ctkmessagebox pillow requests beautifulsoup4 selenium chromedriver-autoinstaller
+  python src/factorio_mod_downloader/__main__.py
+```
 4. How to Build the Standalone .exe (Using PyInstaller)
 If you want to compile this source code into a single, executable file (.exe) with the application icon included, install PyInstaller and run the compilation command:
 
-
+```
 # 1. Install PyInstaller
-pip install pyinstaller
+
+    pip install pyinstaller
 
 # 2. Build the executable
+
 pyinstaller --noconfirm --onedir --windowed --add-data "src/factorio_mod_downloader/assets;factorio_mod_downloader/assets" --icon="src/factorio_mod_downloader/assets/factorio_downloader.ico" "src/factorio_mod_downloader/__main__.py" --name "factorio-mod-downloader"
+```
 Once the build process is complete, you will find your standalone application in the following directory:
 📁 dist/factorio-mod-downloader/factorio-mod-downloader.exe
 
