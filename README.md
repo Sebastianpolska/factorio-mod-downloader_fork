@@ -1,8 +1,43 @@
-**Description (Opis wydania dla graczy):**
-```markdown
-This release introduces a standalone `.exe` bundle that allows you to easily download Factorio mods for specific game versions.
 
-### Changelog:
-* Added a drop-down menu to choose the target Factorio version (e.g., `1.1`, `2.0`).
-* Updated underlying scrapers to accurately fetch dependencies for the selected version.
-* Fixed app icons for Windows environments.
+This release contains the full source code for the updated Factorio Mod Downloader. Since there is no pre-built `.exe` file included in this release, you can easily run it directly from the repository or build the executable yourself.
+
+### 🚀 What's New:
+* **Game Version Selector:** Manually choose your target Factorio version (full support for **Factorio 2.0+ Space Age**).
+* **Dependency Fixes:** Resolved version conflicts to allow smooth operations on modern Python setups.
+
+---
+
+### 🛠️ For Developers (How to install, run & build)
+
+Follow these steps to setup the project locally on your machine:
+
+#### 1. Prerequisites
+Make sure you have **Python** installed on your system.
+
+#### 2. Clone or Download the Repository
+* Click the green **Code** button on the main repository page and select **Download ZIP**, then extract it.
+* *Or* clone it via Git terminal (replace `YOUR-USERNAME` with your actual GitHub name):
+  ```bash
+  git clone [https://github.com/YOUR-USERNAME/factorio-mod-downloader.git](https://github.com/YOUR-USERNAME/factorio-mod-downloader.git)
+  cd factorio-mod-downloader
+3. Install Dependencies & Run
+Install all required libraries using standard Python pip and run the application directly from the source code:
+
+bash
+
+pip install customtkinter ctkmessagebox pillow requests beautifulsoup4 selenium chromedriver-autoinstaller
+python src/factorio_mod_downloader/__main__.py
+
+4. How to Build the Standalone .exe (Using PyInstaller)
+If you want to compile this source code into a single, executable file (.exe) with the application icon included, install PyInstaller and run the compilation command:
+
+
+# 1. Install PyInstaller
+pip install pyinstaller
+
+# 2. Build the executable
+pyinstaller --noconfirm --onedir --windowed --add-data "src/factorio_mod_downloader/assets;factorio_mod_downloader/assets" --icon="src/factorio_mod_downloader/assets/factorio_downloader.ico" "src/factorio_mod_downloader/__main__.py" --name "factorio-mod-downloader"
+Once the build process is complete, you will find your standalone application in the following directory:
+📁 dist/factorio-mod-downloader/factorio-mod-downloader.exe
+
+Note: All core application mechanics and design belong to the original author, Vaibhav Vikas. This is an open-source modification.
