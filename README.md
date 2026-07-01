@@ -1,20 +1,20 @@
 
 This release contains the full source code for the updated Factorio Mod Downloader. Since there is no pre-built `.exe` file included in this release, you can easily run it directly from the repository or build the executable yourself.
 
-### 🚀 What's New:
+# 🚀 What's New:
 * **Game Version Selector:** Manually choose your target Factorio version (full support for **Factorio 2.0+ Space Age**).
 * **Dependency Fixes:** Resolved version conflicts to allow smooth operations on modern Python setups.
 
 ---
 
-### 🛠️ For Developers (How to install, run & build)
+# 🛠️ For Developers (How to install, run & build)
 
 Follow these steps to setup the project locally on your machine:
 
-#### 1. Prerequisites
+## 1. Prerequisites
 Make sure you have **Python** installed on your system.
 
-#### 2. Clone or Download the Repository
+## 2. Clone or Download the Repository
 * Click the green **Code** button on the main repository page and select **Download ZIP**, then extract it.
 * *Or* clone it via Git terminal (replace `YOUR-USERNAME` with your actual GitHub name):
   ```bash
