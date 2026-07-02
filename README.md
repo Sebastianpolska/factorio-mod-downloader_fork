@@ -15,7 +15,12 @@ Once you run the application, follow these simple steps to download your mods:
 # 🚀 What's New:
 * **Game Version Selector:** Manually choose your target Factorio version (full support for **Factorio 2.0+ Space Age**).
 * **Dependency Fixes:** Resolved version conflicts to allow smooth operations on modern Python setups.
-
+* **MultiDownload:** Allows downloading multiple mods at once using clean URLs.
+  * *How to use:* Paste full mod links into the text area—one link per line. **Make sure to separate each link with a comma `,`**. The launcher automatically cleans up search parameters and subpages.
+  * *Example format:*
+    https://mods.factorio.com/mod/modid/downloads,
+    https://mods.factorio.com/mod/modid?from=search,
+    https://mods.factorio.com/mod/modid
 ---
 
 # 🛠️ For Developers (How to install, run & build)
